@@ -20,10 +20,10 @@ queue_service = QueueService(account_name='shakenov', account_key='1/cjKM7g2rMMy
 #     queue_service.delete_message('taskqueue', message.id, message.pop_receipt)
 
 # Print messages and delete them - batch of messages
-# messages = queue_service.get_messages('taskqueue', num_messages=16, visibility_timeout=5)
+# messages = queue_service.get_messages('taskqueue', num_messages=16, visibility_timeout=5*60)
 # for message in messages:
 #     print(message.content)
-#     queue_service.delete_message('taskqueue', message.id, message.pop_receipt)  
+#     queue_service.delete_message('taskqueue', message.id, message.pop_receipt)
 
 # Change the message
 # messages = queue_service.get_messages('taskqueue', visibility_timeout=5)
